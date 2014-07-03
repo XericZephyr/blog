@@ -1,12 +1,11 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
-
-markdown: redcarpet
-pygments: true
-logo: false
+name: Stay Hungry, Stay Foolish
+url:  "http://xericzephyr.github.io/blog/"
+description: Zheng Xu's Dark Cell
+meta_description: "Stay Hungry, Stay Foolish, Zheng Xu's Dark Cell"
 paginate: 15
 
-# Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
+highlighter: pygments
+logo: false
