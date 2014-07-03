@@ -9,3 +9,5 @@ redcarpet:
     extensions: [with_toc_data]
 highlighter: pygments
 logo: false
+
+baseurl: "/blog/"
