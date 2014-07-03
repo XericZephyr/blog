@@ -10,9 +10,9 @@ redcarpet:
 highlighter: pygments
 logo: false
 
-baseurl: "/blog/"
+baseurl: /blog
 
 relative_permalinks: true
-permalink: :year/:month/:day/:title
-paginate_path: page/:num
+permalink: /:year/:month/:day/:title
+paginate_path: /page/:num
 paginate: 15
