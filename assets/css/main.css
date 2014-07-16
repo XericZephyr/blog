@@ -8,7 +8,9 @@ body {font-size: 1.9rem;}
 .site-head a {color:#eee;}
 
 /* The font is too large in the post view. Revert to small size*/
-.post-header .blog-title {font-size:inherit;}
+.blog-title {font-size:5rem;}
+ 
+.post-header {font-size:3rem;}
 
 /* Reduce font size and add line-height*/
 pre{
