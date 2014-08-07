@@ -8,12 +8,12 @@ Test Report - ASM Tracker Time Limit Detouring Project
 1. Properly compile the Visual Studio Projects in `trunk_new.rar` given.
 2. Run project and see the tracking process of human face.
 3. Remove the time limit of the program.
-4. Summarize above progress into a report document
+4. Summarize above progress into a report document which include 
 
-	Include: 
 	- Problems encountered
 	- Solving process
 	- Final Solutions
+	
 	
 5. Briefly introduce the architecture and running process of the FaceDemo program.
 
@@ -37,40 +37,38 @@ http://civanim.blogspot.com/2010/04/install-opencv-21-for-microsoft-visual.html
 
 ## Compatibility Problems
 
-I encountered some problems when compiling the projects. 
-
 ### Notions and Predefinitions
 
-- Define trunk_new extract target directory as $(TrunkDIR)
-- Define ASMTracker Project directory as $(ASMTrkDIR)
+- Define trunk_new extract target directory as `$(TrunkDIR)`
+- Define ASMTracker Project directory as `$(ASMTrkDIR)`
 
 ### Solution Steps
 
-1. Add following include path to Visual Studio 2008 
+* Add following include path to Visual Studio 2008 
 
 ```
 $(TrunkDIR)\FlyCapture2\include
 ```
 
-2. Add following path to system variable PATH then reboot to make sure that it takes effect
+* Add following path to system variable `PATH` then reboot to make sure that it takes effect
 
 ```
 $(TrunkDIR)\OpenCV2.1\bin
 $(TrunkDIR)\FlyCapture2\bin
 ```
 
-3. Adjust Running Parameters
+* Adjust Running Parameters
 
 In `$(ASMTrkDIR)/Param/Param.txt`
 modify `captureType=3` to `captureType=2`
 
-4. In `$(ASMTrkDIR)/ASMTrackerDLL/TrackerDriverDll.h`
+* In `$(ASMTrkDIR)/ASMTrackerDLL/TrackerDriverDll.h`
 
 modify `line 24` to
 ```C 
 #include "../FlyToOpencvDLL/FlyToOpencv.h"
 ```
-5. In `$(ASMTrkDIR)/QtDriverGUI/main.cpp`
+* In `$(ASMTrkDIR)/QtDriverGUI/main.cpp`
 modify `line 45` to 
 ```C
 	bool allowStart = 1;
