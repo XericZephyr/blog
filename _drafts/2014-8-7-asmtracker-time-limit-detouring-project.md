@@ -14,7 +14,6 @@ Test Report - ASM Tracker Time Limit Detouring Project
 	- Solving process
 	- Final Solutions
 	
-	
 5. Briefly introduce the architecture and running process of the FaceDemo program.
 
 
@@ -125,3 +124,12 @@ The full code block concerning time-limit is listed below.
 # ASMTracker Architecture
 
 The ASMTracker could be used into 
+
+
+# Remaining Problems
+
+## Random Crash of TrainSkinModel
+
+- File: `$(ASMTrkDIR)\ASMTrackerDLL\Controller.cpp`
+- Code Line: 159
+- Description: Random Crash when program initiating
