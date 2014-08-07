@@ -5,14 +5,16 @@ Test Report - ASM Tracker Time Limit Detouring Project
 
 ## Problems
 
-1. Properly compile the Visual Studio Projects in trunk_new.rar given.
+1. Properly compile the Visual Studio Projects in `trunk_new.rar` given.
 2. Run project and see the tracking process of human face.
 3. Remove the time limit of the program.
 4. Summarize above progress into a report document
-Include: 
-- Problems encountered
-- Solving process
-- Final Solutions
+
+	Include: 
+	- Problems encountered
+	- Solving process
+	- Final Solutions
+	
 5. Briefly introduce the architecture and running process of the FaceDemo program.
 
 
@@ -45,21 +47,25 @@ I encountered some problems when compiling the projects.
 ### Solution Steps
 
 1. Add following include path to Visual Studio 2008 
+
 ```
 $(TrunkDIR)\FlyCapture2\include
 ```
 
 2. Add following path to system variable PATH then reboot to make sure that it takes effect
+
 ```
 $(TrunkDIR)\OpenCV2.1\bin
 $(TrunkDIR)\FlyCapture2\bin
 ```
 
 3. Adjust Running Parameters
+
 In `$(ASMTrkDIR)/Param/Param.txt`
 modify `captureType=3` to `captureType=2`
 
 4. In `$(ASMTrkDIR)/ASMTrackerDLL/TrackerDriverDll.h`
+
 modify `line 24` to
 ```C 
 #include "../FlyToOpencvDLL/FlyToOpencv.h"
@@ -82,7 +88,9 @@ You could simply change `maxFrame` parameter to `(unsigned int)-1`(`0xFFFFFFFF`)
 There are also several code patch methods to detour time limit of the program. Below is only one of them.
 
 The basic idea is to check the progressBar code and then find the source of the time limit.
-In `$(ASMTrkDIR)\ASMTrackerDLL\TrackerDriverDLL.cpp`, find the code starting from `line 642`, comment `line 643,644,669,670,671`. The full code block concerning time-limit is listed below.
+In `$(ASMTrkDIR)\ASMTrackerDLL\TrackerDriverDLL.cpp`, find the code starting from `line 642`, comment `line 643,644,669,670,671`. Then the time limit will actually disappear. 
+
+The full code block concerning time-limit is listed below.
 ```C
 		// Check if maximum number of frames has been exceeded
 		if (frameNumb < params->maxFrames)
