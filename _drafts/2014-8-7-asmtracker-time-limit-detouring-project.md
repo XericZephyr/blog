@@ -1,9 +1,11 @@
 Test Report - ASM Tracker Time Limit Detouring Project
 =========
 
+Author: Zheng Xu
+
 # Project Requirements Restatement
 
-## Problems
+## Quiz
 
 1. Properly compile the Visual Studio Projects in `trunk_new.rar` given.
 2. Run project and see the tracking process of human face.
@@ -123,8 +125,22 @@ The full code block concerning time-limit is listed below.
 	
 # ASMTracker Architecture
 
-The ASMTracker could be used into 
+## Brief Module Description
 
+Below are one-sentence description of each module. Mostly they are guessed from name.
+
+- CvBlobsLib: It seems it is used to process OpenCV Binary Large Objects.
+- FlyToOpencvDLL: FlyCapture webcam stream to OpenCV stream
+- BlinkDLL: Detect human eye close and open 
+- ExpressionDLL: Detect negativity and positivity of human facial expression
+- GestureDLL: Gesture detection
+- TrackerASMDLL: Dynamically track human expression, and blink
+- TrackerCLMDLL: Not clear, it seems it is not used.
+
+Executable Projects:
+
+- DriverConsole: A windows console project using to test each module of FaceDemo. 
+- QtDriverGUI: An application of FaceDemo with Qt-based GUI.
 
 # Remaining Problems
 
