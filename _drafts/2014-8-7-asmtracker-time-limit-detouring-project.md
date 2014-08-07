@@ -134,7 +134,7 @@ Below are one-sentence description of each module. Mostly they are guessed from 
 - BlinkDLL: Detect human eye close and open 
 - ExpressionDLL: Detect negativity and positivity of human facial expression
 - GestureDLL: Gesture detection
-- TrackerASMDLL: Dynamically track human expression, and blink
+- TrackerASMDLL: Dynamically track human expression and eye blink
 - TrackerCLMDLL: Not clear, it seems it is not used.
 
 Executable Projects:
