@@ -10,7 +10,7 @@ Author: Zheng Xu
 1. Properly compile the Visual Studio Projects in `trunk_new.rar` given.
 2. Run project and see the tracking process of human face.
 3. Remove the time limit of the program.
-4. Summarize above progress into a report document which include 
+4. Summarize progresses above into a report document which include 
 
 	- Problems encountered
 	- Solving process
