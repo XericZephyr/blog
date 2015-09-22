@@ -50,7 +50,7 @@ In the last week, my contributions are generally with Python coding. I become aw
 
 Last but not least, I learned several other important things last week.
 
-* **Place set_mode_gpu before constructing network in caffe. [Ref](https://github.com/BVLC/caffe/issues/3053)** 
+* **Place `set_mode_gpu` before constructing network in caffe. [Ref](https://github.com/BVLC/caffe/issues/3053)** 
 	
 	
 	
