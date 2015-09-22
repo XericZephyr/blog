@@ -117,14 +117,14 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 30pt;
     line-height: 1.2em;
     letter-spacing: -2px;
     text-indent: -3px;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 26pt;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
@@ -162,7 +162,7 @@ h4 a, h5 a, h6 a {
 
 
 p, ul, ol, dl {
-    margin: 1.6em 0;
+    margin: 8px 0;
 }
 
 ol ol, ul ul,
@@ -400,7 +400,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .blog-description {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 20pt;
     line-height: 1.5em;
     font-weight: 300;
     font-family: 'Noto Serif', serif;
@@ -411,7 +411,7 @@ margin on the iframe, cause it breaks stuff. */
 .post {
     position: relative;
     width:80%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
@@ -817,7 +817,6 @@ margin on the iframe, cause it breaks stuff. */
     .post-template .post {
         padding-bottom: 1rem;
     }
-
     .post-template .post-header {
         padding: 40px 0;
     }
