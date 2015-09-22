@@ -1,14 +1,20 @@
 /* Rosario. I've added and changed few things. Feel free to change it as you like */
 
 /* Font size of 2.0 is too big, I'll reduce it */
-body {font-size: 1.9rem;}
+body {font-size: 12pt;}
 
 /* Adding some text shadow*/
 .site-head {text-shadow: 2px 2px #234;}
-.site-head a {color:#eee;}
+.site-head a {
+	color:#eee;
+	font-size: 18pt;
+}
 
 /* The font is too large in the post view. Revert to small size*/
-.post-header .blog-title {font-size:inherit;}
+.post-header .blog-title {
+	font-size:32pt;
+	padding: 0 0 20px 0;
+}
 
 /* Reduce font size and add line-height*/
 pre{
