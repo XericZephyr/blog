@@ -1,0 +1,16 @@
+dist: trusty
+sudo: false
+language: python
+python:
+- '2.7'
+env:
+  global:
+    secure: reh8bwoAnpV7kmgcNdIIMtnY8aEKj1qaPYBhNd8FbK11hnj8V7QG3OY13Drlrbv4t6zNJtfBpvf6O6sJrxK3MSsq3EdE9N8Zjq+N+DzOJ9PtV+6zWd74wpNov86j8EBbH+0/nCoSFYd1sLGR6yu68E7D8Wv5USng5TGpvhMlPidAOCJb5tsFqmhx/fcd6aJ/50UDRSWUrVgwr14gbY6obPqHUdj/9NxI0EOBsN/Sir35TskuETvtZt3jgsT58XoiO/h3ksGBSgPQT7y5BagAEGz02sISJWJ+ocImlx+zKwP0XjJIWdtjsehm7+2/b8xyUXg+06XzRJRccbADIaiAhC2sDWT6wByksWZg0Ya2G8v4IN6cBxgbKIS5Y5kaQZV3eQwmh5XgM4WPfG5x2gvwl9bTz4J0odRJrI6tMTGac+fCUbkvUHT+wRta5wdRpjLgVWDr/ZCPKQjQeBmpMVlAB8RDlEYQAKWmi190AiasNB4Qep42juI5cSEHGPDM7mEKPlAK3+a8CVNfJ8B+HANiOdSFBeO4gqhPRT19b9aAOZ8mW0NwTk5sVjJDl+I+MIzThhA192/1iOjwDguOqiNX1wE8GvCjkStRAdjmEnH4FdcPC6jonRtsiBvre4XJq+DDt6Hy0pCHdqD6vZUk7jcO8wiLaPX86KCE8FJOXW5wwX8=
+script:
+- echo "Hello Travis!"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
