@@ -2,7 +2,8 @@
 layout: post
 title:  "Python伪开发者对于搜狐云景的测评"
 date:   2014-7-16 17:11:00
-categories: SCE, python
+categories: infrastructure
+tags: cloud python
 ---
 
 本人是GAE和OpenShift的狂热爱好者，玩过各种国外PaaS。某次想搞个稍微复杂点的Python Web程序，需要比较好的网络传输速度，就试图找前PM(Project Manager)要个国内的VPS耍一把。前PM表示近来搞了个搜狐云景的公测激活码，让我先试试，于是就有了我在SCE的第一个奇怪的Python应用。
